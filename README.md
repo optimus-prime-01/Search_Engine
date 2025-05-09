@@ -35,24 +35,24 @@ cd pdf-search-engine
 
 ### 2. Install Frontend Dependencies
 
-\`\`\`bash
+```bash
 cd frontend
 npm install
-\`\`\`
+```
 
 ### 3. Install Backend Dependencies
 
-\`\`\`bash
+```bash
 cd ../backend
 npm install
-\`\`\`
+```
 
 ### 4. Install Python Dependencies
 
-\`\`\`bash
+```bash
 cd pdf_processor
 pip install PyMuPDF pdfminer.six
-\`\`\`
+```
 
 ## ⚙️ Configuration
 
@@ -60,10 +60,10 @@ pip install PyMuPDF pdfminer.six
 
 Create \`.env\` in \`backend/\`:
 
-\`\`\`env
+```env
 PORT=3001
 MONGODB_URI=mongodb://localhost:27017/pdfsearch
-\`\`\`
+```
 
 ## ▶️ Running the Application
 
@@ -76,14 +76,14 @@ MONGODB_URI=mongodb://localhost:27017/pdfsearch
 
 1. Build frontend:
 
-\`\`\`bash
+```bash
 cd frontend
 npm run build
-\`\`\`
+```
 
 2. Serve frontend using Nginx:
 
-\`\`\`
+```
 server {
   listen 80;
   server_name your.intranet.ip;
@@ -93,26 +93,26 @@ server {
     try_files \$uri /index.html;
   }
 }
-\`\`\`
+```
 
 3. Use PM2 to keep backend running:
 
-\`\`\`bash
+```bash
 cd backend
 pm2 start server/server.js
-\`\`\`
+```
 
 4. Restrict access with firewall rules or VPN  
 
 ## 🗂️ Project Structure
 
-\`\`\`
+```
 pdf-search-engine/
 ├── frontend/
 ├── backend/
 │   ├── server/
 │   └── pdf_processor/
-\`\`\`
+```
 
 ## 🤝 Contributing
 
