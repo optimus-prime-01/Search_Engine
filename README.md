@@ -6,9 +6,7 @@ A full-stack web application for searching PDF documents hosted on an intranet, 
 ## 🔧 Features
 
 - 🔍 Full-text search across intranet-hosted PDF documents  
-- 💡 Real-time search suggestions  
 - 🌓 Dark/Light mode toggle  
-- 📄 PDF preview functionality  
 - 📊 Metadata display (title, author, page count, etc.)  
 - 🔐 Secure intranet deployment  
 
@@ -30,10 +28,10 @@ A full-stack web application for searching PDF documents hosted on an intranet, 
 
 ### 1. Clone the repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/pdf-search-engine.git
 cd pdf-search-engine
-\`\`\`
+```
 
 ### 2. Install Frontend Dependencies
 
